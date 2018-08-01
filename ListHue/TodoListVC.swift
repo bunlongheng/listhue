@@ -1,5 +1,5 @@
 //
-//  TodoListTableViewController.swift
+//  TodoListVC
 //  ListHue
 //
 //  Created by Bunlong Heng on 8/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TodoListTableViewController: UITableViewController {
+class TodoListVC: UITableViewController {
 
     let items = ["Find Mike", "Buy Eggos", "Kill Demogorgon"]
     
@@ -23,7 +23,7 @@ class TodoListTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "listItemCell", for: indexPath)
         
         cell.textLabel?.text = items[indexPath.row]
         
