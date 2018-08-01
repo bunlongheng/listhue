@@ -10,12 +10,14 @@ import UIKit
 
 class TodoListVC: UITableViewController {
 
-    let items = ["Find Mike", "Buy Eggos", "Kill Demogorgon"]
+    var items = ["Find Mike", "Buy Eggos", "Kill Demogorgon"]
     
     //    viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    //MARK - TableView Datasource Methods
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -29,5 +31,56 @@ class TodoListVC: UITableViewController {
         
         return cell
     }
+    
+    //MARK - TableView Delegate Method
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(items[indexPath.row])
+        
+        if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .none
+        } else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        }
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    //MARK - Add new item
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+       
+        var textField = UITextField()
+        
+        let alert = UIAlertController(title: "Add New Item", message: "", preferredStyle: .alert)
+        
+        
+        //action
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            
+            self.items.append(textField.text!)
+            self.tableView.reloadData()
+            
+        }
+        
+        
+        
+        
+        alert.addTextField { (alertTextField) in
+            
+            alertTextField.placeholder = "Create new item"
+            
+            print(alertTextField.text)
+            textField = alertTextField
+            
+        }
+        
+        alert.addAction(action)
+        
+        present(alert, animated: true, completion: nil)
+        
+        
+    }
+    
+    
 
 }

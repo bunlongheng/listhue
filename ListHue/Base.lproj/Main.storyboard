@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Todo ListVC-->
+        <!--Lists-->
         <scene sceneID="l5d-ma-GUF">
             <objects>
                 <tableViewController id="hEQ-AL-Y4C" customClass="TodoListVC" customModule="ListHue" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="hEQ-AL-Y4C" id="aSD-K4-eYh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Oex-PS-gly"/>
+                    <navigationItem key="navigationItem" title="Lists" id="Oex-PS-gly">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ipI-tv-qjO">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="hEQ-AL-Y4C" id="HMm-Ta-ftK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pg3-x0-Brv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -47,6 +54,9 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30474192239999998" green="0.6487291919" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
