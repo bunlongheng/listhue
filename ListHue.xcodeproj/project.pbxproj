@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04EAAAD220E740B9ADEEF2B5 /* Pods_ListHue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B65CF3E88A8B72001510232 /* Pods_ListHue.framework */; };
 		1748A64F2111EC2E001EF88E /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748A64E2111EC2E001EF88E /* TodoListVC.swift */; };
-		1748A67D21123072001EF88E /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1748A67B21123072001EF88E /* DataModel.xcdatamodeld */; };
+		1748A67F211341B5001EF88E /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748A67E211341B5001EF88E /* CategoryVC.swift */; };
 		17595B9A2111E3D3007CC9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17595B992111E3D3007CC9EE /* AppDelegate.swift */; };
 		17595B9F2111E3D3007CC9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17595B9D2111E3D3007CC9EE /* Main.storyboard */; };
 		17595BA12111E3D6007CC9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17595BA02111E3D6007CC9EE /* Assets.xcassets */; };
 		17595BA42111E3D6007CC9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17595BA22111E3D6007CC9EE /* LaunchScreen.storyboard */; };
+		175E93DF2113CD90000C571F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E93DE2113CD90000C571F /* Item.swift */; };
+		175E93E12113CE21000C571F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E93E02113CE21000C571F /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1748A64E2111EC2E001EF88E /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
-		1748A67C21123072001EF88E /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		1748A67E211341B5001EF88E /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		17595B962111E3D3007CC9EE /* ListHue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListHue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17595B992111E3D3007CC9EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17595B9E2111E3D3007CC9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17595BA02111E3D6007CC9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17595BA32111E3D6007CC9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17595BA52111E3D6007CC9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175E93DE2113CD90000C571F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		175E93E02113CE21000C571F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		1AA74A51142499C5D83F24F8 /* Pods-ListHue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListHue.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListHue/Pods-ListHue.release.xcconfig"; sourceTree = "<group>"; };
+		8B65CF3E88A8B72001510232 /* Pods_ListHue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListHue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F929A0D2A0CDAD47552741F4 /* Pods-ListHue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListHue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListHue/Pods-ListHue.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EAAAD220E740B9ADEEF2B5 /* Pods_ListHue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 		1748A65321121213001EF88E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1748A67E211341B5001EF88E /* CategoryVC.swift */,
 				1748A64E2111EC2E001EF88E /* TodoListVC.swift */,
 			);
 			path = Controller;
@@ -58,7 +68,8 @@
 		1748A65621121243001EF88E /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1748A67B21123072001EF88E /* DataModel.xcdatamodeld */,
+				175E93E02113CE21000C571F /* Category.swift */,
+				175E93DE2113CD90000C571F /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -68,6 +79,8 @@
 			children = (
 				17595B982111E3D3007CC9EE /* ListHue */,
 				17595B972111E3D3007CC9EE /* Products */,
+				A61DBC07A75456C7FC46028A /* Pods */,
+				F2AA101248061F327148963B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +104,23 @@
 			path = ListHue;
 			sourceTree = "<group>";
 		};
+		A61DBC07A75456C7FC46028A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F929A0D2A0CDAD47552741F4 /* Pods-ListHue.debug.xcconfig */,
+				1AA74A51142499C5D83F24F8 /* Pods-ListHue.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2AA101248061F327148963B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B65CF3E88A8B72001510232 /* Pods_ListHue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17595BA82111E3D6007CC9EE /* Build configuration list for PBXNativeTarget "ListHue" */;
 			buildPhases = (
+				DB8778B48CA7F322E9EE4D05 /* [CP] Check Pods Manifest.lock */,
 				17595B922111E3D3007CC9EE /* Sources */,
 				17595B932111E3D3007CC9EE /* Frameworks */,
 				17595B942111E3D3007CC9EE /* Resources */,
+				3D72BEEEFA1DA6D1FAE943BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,14 +189,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D72BEEEFA1DA6D1FAE943BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ListHue/Pods-ListHue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ListHue/Pods-ListHue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB8778B48CA7F322E9EE4D05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ListHue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17595B922111E3D3007CC9EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				17595B9A2111E3D3007CC9EE /* AppDelegate.swift in Sources */,
-				1748A67D21123072001EF88E /* DataModel.xcdatamodeld in Sources */,
+				1748A67F211341B5001EF88E /* CategoryVC.swift in Sources */,
+				175E93DF2113CD90000C571F /* Item.swift in Sources */,
 				1748A64F2111EC2E001EF88E /* TodoListVC.swift in Sources */,
+				175E93E12113CE21000C571F /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +381,7 @@
 		};
 		17595BA92111E3D6007CC9EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F929A0D2A0CDAD47552741F4 /* Pods-ListHue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -324,6 +400,7 @@
 		};
 		17595BAA2111E3D6007CC9EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA74A51142499C5D83F24F8 /* Pods-ListHue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -362,19 +439,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		1748A67B21123072001EF88E /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				1748A67C21123072001EF88E /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 1748A67C21123072001EF88E /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 17595B8E2111E3D3007CC9EE /* Project object */;
 }
