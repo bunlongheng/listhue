@@ -12,6 +12,7 @@ import RealmSwift
 class CategoryVC: UITableViewController {
     
     let realm = try! Realm()
+    
     var categories : Results<Category>?
     
     override func viewDidLoad() {
@@ -48,7 +49,7 @@ class CategoryVC: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        let destinationVC = segue.destination as! TodoListVC
+        let destinationVC = segue.destination as! ItemVC
         if let indexPath = tableView.indexPathForSelectedRow {
             destinationVC.selectedCategory = categories?[indexPath.row]
         }

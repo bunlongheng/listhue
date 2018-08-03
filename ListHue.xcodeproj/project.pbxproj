@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04EAAAD220E740B9ADEEF2B5 /* Pods_ListHue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B65CF3E88A8B72001510232 /* Pods_ListHue.framework */; };
-		1748A64F2111EC2E001EF88E /* TodoListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748A64E2111EC2E001EF88E /* TodoListVC.swift */; };
+		1748A64F2111EC2E001EF88E /* ItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748A64E2111EC2E001EF88E /* ItemVC.swift */; };
 		1748A67F211341B5001EF88E /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748A67E211341B5001EF88E /* CategoryVC.swift */; };
 		17595B9A2111E3D3007CC9EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17595B992111E3D3007CC9EE /* AppDelegate.swift */; };
 		17595B9F2111E3D3007CC9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17595B9D2111E3D3007CC9EE /* Main.storyboard */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1748A64E2111EC2E001EF88E /* TodoListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListVC.swift; sourceTree = "<group>"; };
+		1748A64E2111EC2E001EF88E /* ItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemVC.swift; sourceTree = "<group>"; };
 		1748A67E211341B5001EF88E /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		17595B962111E3D3007CC9EE /* ListHue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListHue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17595B992111E3D3007CC9EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				1748A67E211341B5001EF88E /* CategoryVC.swift */,
-				1748A64E2111EC2E001EF88E /* TodoListVC.swift */,
+				1748A64E2111EC2E001EF88E /* ItemVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -238,7 +238,7 @@
 				17595B9A2111E3D3007CC9EE /* AppDelegate.swift in Sources */,
 				1748A67F211341B5001EF88E /* CategoryVC.swift in Sources */,
 				175E93DF2113CD90000C571F /* Item.swift in Sources */,
-				1748A64F2111EC2E001EF88E /* TodoListVC.swift in Sources */,
+				1748A64F2111EC2E001EF88E /* ItemVC.swift in Sources */,
 				175E93E12113CE21000C571F /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

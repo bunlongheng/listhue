@@ -1,5 +1,5 @@
 //
-//  TodoListVC
+//  ItemVC
 //  ListHue
 //
 //  Created by Bunlong Heng on 8/1/18.
@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class TodoListVC: UITableViewController {
+class ItemVC: UITableViewController {
     
     var todoItems : Results<Item>?
     
@@ -150,12 +150,11 @@ class TodoListVC: UITableViewController {
 }
 
 //MARK: - Search bar methods
-extension TodoListVC : UISearchBarDelegate {
+extension ItemVC : UISearchBarDelegate {
     
     func  searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
         todoItems = todoItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: true)
-        
         tableView.reloadData()
     }
     
