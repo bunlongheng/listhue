@@ -16,6 +16,7 @@
 		17595BA42111E3D6007CC9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17595BA22111E3D6007CC9EE /* LaunchScreen.storyboard */; };
 		175E93DF2113CD90000C571F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E93DE2113CD90000C571F /* Item.swift */; };
 		175E93E12113CE21000C571F /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E93E02113CE21000C571F /* Category.swift */; };
+		17E446D82116394C001045DD /* SwipeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E446D72116394C001045DD /* SwipeTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		17595BA52111E3D6007CC9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		175E93DE2113CD90000C571F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		175E93E02113CE21000C571F /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		17E446D72116394C001045DD /* SwipeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableVC.swift; sourceTree = "<group>"; };
 		1AA74A51142499C5D83F24F8 /* Pods-ListHue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListHue.release.xcconfig"; path = "Pods/Target Support Files/Pods-ListHue/Pods-ListHue.release.xcconfig"; sourceTree = "<group>"; };
 		8B65CF3E88A8B72001510232 /* Pods_ListHue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ListHue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F929A0D2A0CDAD47552741F4 /* Pods-ListHue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ListHue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ListHue/Pods-ListHue.debug.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1748A67E211341B5001EF88E /* CategoryVC.swift */,
+				17E446D72116394C001045DD /* SwipeTableVC.swift */,
 				1748A64E2111EC2E001EF88E /* ItemVC.swift */,
 			);
 			path = Controller;
@@ -197,13 +200,17 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ListHue/Pods-ListHue-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -239,6 +246,7 @@
 				1748A67F211341B5001EF88E /* CategoryVC.swift in Sources */,
 				175E93DF2113CD90000C571F /* Item.swift in Sources */,
 				1748A64F2111EC2E001EF88E /* ItemVC.swift in Sources */,
+				17E446D82116394C001045DD /* SwipeTableVC.swift in Sources */,
 				175E93E12113CE21000C571F /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
