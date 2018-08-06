@@ -21,26 +21,14 @@ class CategoryVC: SwipeTableVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         loadCategories()
-        
         tableView.rowHeight = 80
+        title = "Todo"
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        title = "Todo"
-        
+    override func viewWillDisappear(_ animated: Bool) {
         guard let navBar = navigationController?.navigationBar else { fatalError() }
-//        guard let navBarColor = UIColor(hexString: "fff") else { fatalError() }
-//        
-//        print(navBarColor)
-//        
-//        navBar.barTintColor = navBarColor
-        navBar.tintColor = ContrastColorOf(FlatBlack(), returnFlat: true)
         navBar.largeTitleTextAttributes =   [NSAttributedStringKey.foregroundColor: FlatWhite()]
-        
-        view.backgroundColor = UIColor.flatBlack
-
-        
-
+        view.backgroundColor = FlatBlackDark()
     }
     
     
